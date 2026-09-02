@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHENEU — D2C Jammu Chapter Launch</title>
+<meta name="description" content="SHENEU — a flagship women-centric platform celebrating women who knew they could. D2C Jammu Chapter Launch.">
+<meta name="robots" content="index, follow">
+
+<!-- Security: restrict what this page can load/run. Update font/CDN hosts here if you add any. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action mailto:; frame-ancestors 'none'; upgrade-insecure-requests;">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Scroll progress + ambient cursor glow — decorative, non-interactive -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav" id="siteNav">
+  <div class="wrap">
+    <a href="#" class="nav-logo">SHE<span>NEU</span></a>
+    <a href="#nominate" class="nav-cta magnetic">Nominate Her</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<section class="hero">
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="eyebrow reveal">D2C — Jammu Chapter Launch</div>
+    <h1 class="reveal">She knew.<br><em>Then she did.</em></h1>
+    <p class="hero-sub reveal">A flagship women-centric platform celebrating the women who knew they could — and changed what was possible.</p>
+    <div class="hero-actions reveal">
+      <a href="#nominate" class="btn btn-primary magnetic">Nominate a Woman</a>
+      <a href="#format" class="btn btn-outline magnetic">Explore the Platform</a>
+    </div>
+    <div class="hero-meta reveal">
+      <div><b>Format</b><br>Awards · Panel · Experience · Movement</div>
+      <div><b>Where</b><br>Jammu, J&amp;K</div>
+      <div><b>Curated by</b><br>Shwettima Jamwal, Event Curator &amp; Host</div>
+    </div>
+  </div>
+</section>
+
+<section class="opportunity">
+  <div class="wrap">
+    <div class="kicker reveal">THE OPPORTUNITY</div>
+    <div class="section-head reveal">
+      <h2>Jammu doesn't need another award night. It needs a platform.</h2>
+    </div>
+    <div class="opp-grid">
+      <div class="opp-card reveal tilt-target">
+        <div class="num">1</div>
+        <h3>Recognise</h3>
+        <p>Women whose work deserves to be known — across every field, at every scale.</p>
+      </div>
+      <div class="opp-card reveal tilt-target">
+        <div class="num">2</div>
+        <h3>Connect</h3>
+        <p>Women across sectors, generations and spheres of influence, in one room.</p>
+      </div>
+      <div class="opp-card reveal tilt-target">
+        <div class="num">3</div>
+        <h3>Amplify</h3>
+        <p>Stories that can shape the next generation of women who lead.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="insight">
+  <div class="wrap">
+    <div class="kicker on-dark reveal">THE INSIGHT</div>
+    <h2 class="split-reveal">We know their names. But do we know their stories?</h2>
+    <p class="reveal">Behind every accomplished woman is a decision, a risk, a failure, a sacrifice — and a moment when she simply knew she had to begin.</p>
+  </div>
+</section>
+
+<!-- ============ PHOTO GALLERY ============
+     Photos are NOT hardcoded here — the list lives in js/gallery-photos.js.
+     Add, remove, or reorder photos there and this section updates itself,
+     however many you add. This markup only holds the empty track + controls. -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="kicker reveal">MOMENTS</div>
+    <div class="section-head reveal">
+      <h2>The room, in pictures.</h2>
+      <p>Add as many photos as you like — edit the list in <code>js/gallery-photos.js</code>, no HTML editing needed.</p>
+    </div>
+  </div>
+  <div class="gallery-viewport">
+    <button type="button" class="gallery-nav gallery-prev" id="galleryPrev" aria-label="Scroll photos left">&#8249;</button>
+    <div class="gallery-track" id="galleryTrack" tabindex="0" aria-label="Photo gallery — scroll or use the arrow buttons"></div>
+    <button type="button" class="gallery-nav gallery-next" id="galleryNext" aria-label="Scroll photos right">&#8250;</button>
+  </div>
+</section>
+
+<!-- Lightbox (populated by js/main.js, no inline scripts) -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close photo viewer">&times;</button>
+  <button type="button" class="lightbox-prev" id="lightboxPrev" aria-label="Previous photo">&#8249;</button>
+  <img src="" alt="" id="lightboxImg">
+  <button type="button" class="lightbox-next" id="lightboxNext" aria-label="Next photo">&#8250;</button>
+</div>
+
+<section class="format" id="format">
+  <div class="wrap">
+    <div class="kicker reveal">THE FORMAT</div>
+    <div class="section-head reveal"><h2>Not just an awards night.</h2></div>
+    <div class="format-grid">
+      <div class="format-card fc1 reveal tilt-target"><h3>The Awards</h3><p>Recognition with meaning.</p></div>
+      <div class="format-card fc2 reveal tilt-target"><h3>The Conversation</h3><p>Power, money, ambition, impact.</p></div>
+      <div class="format-card fc3 reveal tilt-target"><h3>The Experience</h3><p>A premium evening of stories, culture and connection.</p></div>
+      <div class="format-card fc4 reveal tilt-target"><h3>The Movement</h3><p>A year-round community of women leaders.</p></div>
+    </div>
+    <div class="format-tag reveal">One evening. <b>A long-term platform.</b></div>
+  </div>
+</section>
+
+<section class="conversation">
+  <div class="wrap">
+    <div class="kicker reveal">THE HERO CONVERSATION</div>
+    <div class="section-head reveal">
+      <h2>The women building the next J&amp;K.</h2>
+      <p class="lede">Who is really shaping the region's economy? A conversation about power, money, opportunity and influence — not generic empowerment.</p>
+    </div>
+    <div class="marquee reveal">
+      <div class="marquee-track">
+        <div class="chip">Business</div>
+        <div class="chip">Startups</div>
+        <div class="chip">Tourism</div>
+        <div class="chip">Culture</div>
+        <div class="chip">Policy</div>
+        <div class="chip">Creative Economy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="questions">
+  <div class="wrap">
+    <div class="kicker on-dark reveal">THE QUESTIONS</div>
+    <div class="section-head reveal"><h2>The questions we don't usually ask.</h2></div>
+    <div class="q-list">
+      <div class="q-item reveal"><span class="q-mark">&ldquo;</span><p>Who really makes the big decisions?</p></div>
+      <div class="q-item reveal"><span class="q-mark">&ldquo;</span><p>Can a woman be powerful without being called difficult?</p></div>
+      <div class="q-item reveal"><span class="q-mark">&ldquo;</span><p>What did success cost you?</p></div>
+      <div class="q-item reveal"><span class="q-mark">&ldquo;</span><p>Who helped you when nobody was watching?</p></div>
+      <div class="q-item reveal"><span class="q-mark">&ldquo;</span><p>What would you tell the woman you were 10 years ago?</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="awards">
+  <div class="wrap">
+    <div class="kicker reveal">THE RECOGNITION</div>
+    <div class="section-head reveal"><h2>The SHENEU Awards</h2><p>Impact over visibility.</p></div>
+    <div class="awards-grid">
+      <div class="award-card reveal tilt-target"><h4>The Changemaker</h4></div>
+      <div class="award-card reveal tilt-target"><h4>The Builder</h4></div>
+      <div class="award-card reveal tilt-target"><h4>The Pioneer</h4></div>
+      <div class="award-card reveal tilt-target"><h4>The Creator</h4></div>
+      <div class="award-card reveal tilt-target"><h4>The Future Force</h4></div>
+      <div class="award-card reveal tilt-target"><h4>The Culture Keeper</h4></div>
+      <div class="award-card reveal tilt-target"><h4>The Public Impact Leader</h4></div>
+      <div class="award-card reveal tilt-target"><h4>The Game Changer</h4></div>
+      <div class="award-card award-honour reveal tilt-target">
+        <h4>The SHENEU Honour</h4>
+        <p>An extraordinary contribution, over time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="experience">
+  <div class="wrap">
+    <div class="kicker reveal">THE EXPERIENCE</div>
+    <div class="section-head reveal"><h2>A curated journey, not a stage and dinner.</h2></div>
+    <div class="journey">
+      <div class="j-step reveal tilt-target"><div class="j-num">01</div><h4>Arrive</h4><p>Red carpet, portrait studio, the "Sheneu" wall.</p></div>
+      <div class="j-step reveal tilt-target"><div class="j-num">02</div><h4>Connect</h4><p>Curated networking.</p></div>
+      <div class="j-step reveal tilt-target"><div class="j-num">03</div><h4>Listen</h4><p>Keynote and conversation.</p></div>
+      <div class="j-step reveal tilt-target"><div class="j-num">04</div><h4>Celebrate</h4><p>Awards and stories.</p></div>
+      <div class="j-step reveal tilt-target"><div class="j-num">05</div><h4>Belong</h4><p>The SHENEU Circle.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="vision">
+  <div class="wrap vision-top">
+    <div class="reveal">
+      <div class="kicker on-dark">THE LONG-TERM VISION</div>
+      <h2>One night. One community. A year-round movement.</h2>
+    </div>
+    <ul class="vision-list reveal">
+      <li>Quarterly conversations</li>
+      <li>Business &amp; networking circles</li>
+      <li>Mentorship</li>
+      <li>Storytelling &amp; media</li>
+      <li>Young Women Leadership Network</li>
+      <li>Community initiatives</li>
+    </ul>
+  </div>
+</section>
+
+<section class="room">
+  <div class="wrap">
+    <div class="kicker reveal">THE ROOM</div>
+    <div class="section-head reveal" style="margin:0 auto;text-align:center;">
+      <h2>A curated room of influence.</h2>
+      <p>Local leaders. National voices. Emerging women. Featuring local stories from women shaping Jammu, alongside a nationally recognised keynote voice.</p>
+    </div>
+    <div class="marquee marquee-reverse reveal">
+      <div class="marquee-track">
+        <div class="chip">Government</div>
+        <div class="chip">Business</div>
+        <div class="chip">Startups</div>
+        <div class="chip">Media</div>
+        <div class="chip">Culture</div>
+        <div class="chip">Creators</div>
+        <div class="chip">Academia</div>
+        <div class="chip">Sport</div>
+        <div class="chip">Social Impact</div>
+        <div class="chip">Young Leaders</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="campaign">
+  <div class="wrap">
+    <div class="kicker reveal">THE CAMPAIGN</div>
+    <div class="section-head reveal">
+      <h2>From curiosity to community.</h2>
+      <p>One event, engineered into 100+ pieces of content — the story lives far beyond the venue.</p>
+    </div>
+    <div class="camp-grid">
+      <div class="camp-card reveal tilt-target"><div class="camp-phase">PHASE 01</div><h4>Something is coming</h4><p>Mystery campaign.</p></div>
+      <div class="camp-card reveal tilt-target"><div class="camp-phase">PHASE 02</div><h4>Who is your Sheneu?</h4><p>Nominations open.</p></div>
+      <div class="camp-card reveal tilt-target"><div class="camp-phase">PHASE 03</div><h4>Meet the women</h4><p>Storytelling series.</p></div>
+      <div class="camp-card reveal tilt-target"><div class="camp-phase">PHASE 04</div><h4>The countdown</h4><p>Speaker &amp; awardee reveals.</p></div>
+      <div class="camp-card reveal tilt-target"><div class="camp-phase">PHASE 05</div><h4>She knew</h4><p>The event.</p></div>
+      <div class="camp-card reveal tilt-target"><div class="camp-phase">PHASE 06</div><h4>Then she did</h4><p>Hero film &amp; stories.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="nominate" id="nominate">
+  <div class="wrap">
+    <div class="nom-grid">
+      <div class="nom-copy reveal">
+        <div class="kicker on-dark">NOMINATIONS OPEN</div>
+        <h2>Who is your Sheneu?</h2>
+        <p>Tell us about a woman in Jammu &amp; Kashmir whose work deserves to be known.</p>
+        <ul class="nom-list">
+          <li>Takes under 2 minutes</li>
+          <li>No portfolio or documents needed</li>
+          <li>Our curation team follows up directly</li>
+        </ul>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="nomForm" novalidate>
+          <div id="formFields">
+            <div class="form-two">
+              <div class="form-row">
+                <label for="nomineeName">Nominee's name</label>
+                <input type="text" id="nomineeName" name="nomineeName" placeholder="e.g. Anjali Sharma" maxlength="80" required autocomplete="off">
+              </div>
+              <div class="form-row">
+                <label for="nomineeField">Field / sector</label>
+                <select id="nomineeField" name="nomineeField" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option>Business</option>
+                  <option>Startups</option>
+                  <option>Tourism</option>
+                  <option>Culture</option>
+                  <option>Policy</option>
+                  <option>Creative Economy</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="nomineeStory">Why does she deserve to be known?</label>
+              <textarea id="nomineeStory" name="nomineeStory" placeholder="A few lines on her story or achievement..." maxlength="600" required></textarea>
+            </div>
+            <div class="form-two">
+              <div class="form-row">
+                <label for="yourName">Your name</label>
+                <input type="text" id="yourName" name="yourName" placeholder="Your name" maxlength="80" required autocomplete="name">
+              </div>
+              <div class="form-row">
+                <label for="yourContact">Your email / phone</label>
+                <input type="text" id="yourContact" name="yourContact" placeholder="How we reach you" maxlength="120" required autocomplete="email">
+              </div>
+            </div>
+            <p class="form-error" id="formError" role="alert" hidden></p>
+            <button type="submit" class="btn btn-primary submit-btn">Submit Nomination</button>
+            <p class="form-note">Submitting opens your email app with this nomination pre-filled — just hit send.</p>
+          </div>
+
+          <div class="success-msg" id="successMsg">
+            <div class="tick">&#10003;</div>
+            <h3>Your email app should now be open</h3>
+            <p>Just hit send to complete the nomination. We'll be in touch soon.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <div class="wrap">
+    <div class="kicker on-dark reveal" style="justify-content:center;display:flex;">WHY D2C</div>
+    <h2 class="split-reveal" style="text-align:center;">Let's give Jammu a new room for women to lead.</h2>
+    <p class="reveal">Discover. Celebrate. Connect. Amplify. A signature D2C property with the potential to grow, year after year.</p>
+    <div class="hero-actions reveal">
+      <a href="#nominate" class="btn btn-primary magnetic">Nominate a Woman</a>
+      <a href="mailto:partnerships@sheneu.com" class="btn btn-outline magnetic">Become a Partner</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div>SHENEU — D2C Jammu Chapter Launch</div>
+    <div>Curated by Shwettima Jamwal, Event Curator &amp; Host</div>
+  </div>
+</footer>
+
+<script src="js/gallery-photos.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
