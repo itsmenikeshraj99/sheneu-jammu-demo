@@ -17,10 +17,10 @@
  * Keep the comma after every line except the last one.
  */
 window.GALLERY_PHOTOS = [
-  { src: "images/image_1.jpeg", alt: "Replace with Photo 1" },
-  { src: "images/image_2.jpeg", alt: "Replace with Photo 2" },
-  { src: "images/image_3.jpeg", alt: "Replace with Photo 3" },
-  { src: "images/image_4.jpeg", alt: "Replace with Photo 4" },
-  { src: "images/image_5.jpeg", alt: "Replace with Photo 5" },
-  { src: "images/image_6.jpeg", alt: "Replace with Photo 6" }
+  { src: "images/image_1.jpeg", alt: "Shenue — event moment 1" },
+  { src: "images/image_2.jpeg", alt: "Shenue — event moment 2" },
+  { src: "images/image_3.jpeg", alt: "Shenue — event moment 3" },
+  { src: "images/image_4.jpeg", alt: "Shenue — event moment 4" },
+  { src: "images/image_5.jpeg", alt: "Shenue — event moment 5" },
+  { src: "images/image_6.jpeg", alt: "Shenue — event moment 6" }
 ];
