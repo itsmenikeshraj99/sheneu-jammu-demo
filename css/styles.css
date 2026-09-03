@@ -85,21 +85,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 /* ---------- NAV ---------- */
 .nav{
   position:sticky;top:0;z-index:50;
-  background:rgba(26,14,46,0.92);
+  background:rgba(255,248,240,0.94);
   backdrop-filter:blur(10px);
-  border-bottom:1px solid var(--line);
+  border-bottom:1px solid rgba(26,14,46,0.08);
+  box-shadow:0 4px 20px -8px rgba(26,14,46,0.15);
 }
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 28px;}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 28px;}
 .nav-logo{
   display:inline-flex;align-items:center;
-  background:var(--cream);
-  padding:6px 16px 6px 10px;
-  border-radius:999px;
-  box-shadow:0 6px 16px -8px rgba(0,0,0,0.35);
-  transition:transform .2s var(--ease), box-shadow .2s var(--ease);
 }
-.nav-logo:hover{transform:translateY(-1px);box-shadow:0 10px 20px -8px rgba(0,0,0,0.4);}
-.nav-logo-img{height:34px;width:auto;display:block;}
+.nav-logo-img{height:58px;width:auto;display:block;}
 .nav-cta{
   background:var(--pink);color:var(--white);padding:10px 22px;border-radius:999px;
   font-weight:700;font-size:14px;transition:transform .25s var(--ease), background .25s var(--ease);
