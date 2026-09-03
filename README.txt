@@ -26,7 +26,7 @@ carousel logic at all. Example entry:
 
 Steps:
 1. Drop your photo files into the /images folder.
-   Recommended: JPG, portrait orientation, ~1200px wide, under ~400KB each
+   Recommended: JPG, orientation, 800×1000 px, under ~400KB each
    (compress with TinyPNG/Squoosh before uploading — keeps the page fast).
 2. In js/gallery-photos.js, add one line per photo (src = the file you just
    added, alt = a short real description, used for accessibility).
